@@ -1,7 +1,7 @@
 #  SQL Case Study: Data Mart Analysis
 
 ##  Introduction
-This case study focuses on analyzing the sales performance of **Data Mart**, a venture that adopted sustainable packaging in June 2020. The goal was to evaluate sales trends and performance across regions, platforms, and demographics before and after this major change.
+This case study focuses on analyzing the sales performance of **Data Mart**, a venture that adopted sustainable packaging in June 2020. The goal was to evaluate sales trends and performance across regions, platforms, and demographics  change.
 
 Using SQL (MySQL Workbench), I performed **data cleansing** and answered **7 business questions** through structured queries on the `weekly_sales` dataset.
 
@@ -38,33 +38,51 @@ Performed all transformations in a single SQL query and created a new table `cle
 Answered the following questions using advanced SQL queries:
 
 1.  **Missing Week Numbers**  
-   → Identified missing week numbers to find gaps in data collection
+     Identified missing week numbers to find gaps in data collection
 
 2.  **Total Transactions by Year**  
-   → Summed transactions grouped by calendar year
+     Summed transactions grouped by calendar year
 
 3.  **Monthly Sales by Region**  
-   → Analyzed regional performance by month
+     Analyzed regional performance by month
 
 4.  **Total Transactions by Platform**  
-   → Compared Retail vs Shopify
+     Compared Retail vs Shopify
 
 5.  **Monthly Sales Percentage – Retail vs Shopify**  
-   → Calculated platform-wise sales share for each month using `CASE` and `CTE`
+     Calculated platform-wise sales share for each month using `CASE` and `CTE`
 
 6.  **Sales Percentage by Demographic (Yearly)**  
-   → Used `PARTITION BY` to find each demographic’s sales distribution across years
+     Used `PARTITION BY` to find each demographic’s sales distribution across years
 
 7.  **Top-Contributing Age Bands & Demographics**  
-   → Identified the highest-performing customer segments
+     Identified the highest-performing customer segments
+
+---
+## Key Insights
+
+Analyzed 1B+ transactions from 2018 to 2020, observing consistent year-over-year growth.
+
+Oceania emerged as the highest revenue-generating region across all months.
+
+Retail dominated sales (~97%), while Shopify showed gradual growth from ~2% to ~3.4%.
+
+Families and Couples were the top revenue-generating demographics, with Retirees contributing the highest Retail sales.
 
 ---
 
-## 🛠 Tools Used
-- **MySQL Workbench**
-- SQL (Joins, CTEs, CASE, Aggregates, Window Functions)
+## Tools Used
+
+MySQL
+
+SQL (CTEs, CASE WHEN, Aggregations, Window Functions)
 
 ---
+## Future Recommendations
+
+- Expand analysis to full 52-week data to enable accurate seasonality and annual trend forecasting.
+- Use demographic and regional insights to design targeted promotions for high-value segments like Families and Retirees.
+
 
 ##  Key Learnings
 - Performed real-world data transformation and reporting entirely in SQL
