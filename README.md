@@ -37,14 +37,14 @@ Performed all transformations in a single SQL query and created a new table `cle
 
 The following business questions were analyzed using advanced SQL queries:
 
-# 1. Missing Week Numbers
+## 1. Missing Week Numbers
 
 Identified gaps in weekly data to validate data completeness.
 
 Result:
 Sales data was available for only 6 weeks (Weeks 30–35), indicating partial-year coverage and limiting seasonality analysis.
 
-# 2. Total Transactions by Year
+## 2. Total Transactions by Year
 
 Summed total transactions grouped by calendar year.
 
@@ -58,14 +58,14 @@ Result:
 
 This shows a consistent year-over-year increase in transaction volume.
 
-3. Monthly Sales by Region
+## 3. Monthly Sales by Region
 
 Analyzed regional sales performance across months.
 
 Result:
 Oceania emerged as the top-performing region across all months, followed by Africa and Asia, indicating strong regional demand concentration.
 
-4. Total Transactions by Platform
+## 4. Total Transactions by Platform
 
 Compared transaction volume across sales platforms.
 
@@ -77,21 +77,21 @@ Shopify: 5,925,169 transactions
 
 Retail clearly dominates overall transaction activity.
 
-5. Monthly Sales Percentage – Retail vs Shopify
+## 5. Monthly Sales Percentage – Retail vs Shopify
 
 Calculated platform-wise sales contribution using CTEs and CASE logic.
 
 Result:
 Retail consistently contributed ~97% of monthly sales, while Shopify showed gradual growth from ~2.1% to ~3.4% over time.
 
-6. Sales Percentage by Demographic (Yearly)
+## 6. Sales Percentage by Demographic (Yearly)
 
 Used window functions to analyze demographic contribution by year.
 
 Result:
 Families and Couples contributed the highest sales share, with Couples’ contribution increasing from 30.4% (2018) to 36.1% (2020).
 
-7. Top-Contributing Age Bands & Demographics
+## 7. Top-Contributing Age Bands & Demographics
 
 Identified customer segments driving the highest retail revenue.
 
