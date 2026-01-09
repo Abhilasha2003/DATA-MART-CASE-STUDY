@@ -1,13 +1,13 @@
-# 🧪 SQL Case Study: Data Mart Analysis
+#  SQL Case Study: Data Mart Analysis
 
-## 📖 Introduction
+##  Introduction
 This case study focuses on analyzing the sales performance of **Data Mart**, a venture that adopted sustainable packaging in June 2020. The goal was to evaluate sales trends and performance across regions, platforms, and demographics before and after this major change.
 
 Using SQL (MySQL Workbench), I performed **data cleansing** and answered **7 business questions** through structured queries on the `weekly_sales` dataset.
 
 ---
 
-## 📂 Schema Used: `weekly_sales`
+##  Schema Used: `weekly_sales`
 
 | Column Name      | Data Type  |
 |------------------|------------|
@@ -21,7 +21,7 @@ Using SQL (MySQL Workbench), I performed **data cleansing** and answered **7 bus
 
 ---
 
-## 🧹 Part A: Data Cleaning Steps
+##  Part A: Data Cleaning Steps
 
 Performed all transformations in a single SQL query and created a new table `clean_weekly_sales`. Key operations included:
 
@@ -33,29 +33,29 @@ Performed all transformations in a single SQL query and created a new table `cle
 
 ---
 
-## 🔎 Part B: Data Exploration
+##  Part B: Data Exploration
 
 Answered the following questions using advanced SQL queries:
 
-1. 📆 **Missing Week Numbers**  
+1.  **Missing Week Numbers**  
    → Identified missing week numbers to find gaps in data collection
 
-2. 📊 **Total Transactions by Year**  
+2.  **Total Transactions by Year**  
    → Summed transactions grouped by calendar year
 
-3. 🌍 **Monthly Sales by Region**  
+3.  **Monthly Sales by Region**  
    → Analyzed regional performance by month
 
-4. 🖥️ **Total Transactions by Platform**  
+4.  **Total Transactions by Platform**  
    → Compared Retail vs Shopify
 
-5. 📈 **Monthly Sales Percentage – Retail vs Shopify**  
+5.  **Monthly Sales Percentage – Retail vs Shopify**  
    → Calculated platform-wise sales share for each month using `CASE` and `CTE`
 
-6. 👥 **Sales Percentage by Demographic (Yearly)**  
+6.  **Sales Percentage by Demographic (Yearly)**  
    → Used `PARTITION BY` to find each demographic’s sales distribution across years
 
-7. 💡 **Top-Contributing Age Bands & Demographics**  
+7.  **Top-Contributing Age Bands & Demographics**  
    → Identified the highest-performing customer segments
 
 ---
@@ -66,7 +66,7 @@ Answered the following questions using advanced SQL queries:
 
 ---
 
-## 📌 Key Learnings
+##  Key Learnings
 - Performed real-world data transformation and reporting entirely in SQL
 - Gained hands-on experience with `CTEs`, `CASE`, `GROUP BY`, and `PARTITION BY`
 - Understood how to draw insights from sales data using pure SQL
