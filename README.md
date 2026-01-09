@@ -37,14 +37,14 @@ Performed all transformations in a single SQL query and created a new table `cle
 
 The following business questions were analyzed using advanced SQL queries:
 
-1. Missing Week Numbers
+# 1. Missing Week Numbers
 
 Identified gaps in weekly data to validate data completeness.
 
 Result:
 Sales data was available for only 6 weeks (Weeks 30–35), indicating partial-year coverage and limiting seasonality analysis.
 
-2. Total Transactions by Year
+# 2. Total Transactions by Year
 
 Summed total transactions grouped by calendar year.
 
