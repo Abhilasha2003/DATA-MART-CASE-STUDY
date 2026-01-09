@@ -33,30 +33,70 @@ Performed all transformations in a single SQL query and created a new table `cle
 
 ---
 
-##  Part B: Data Exploration
+## Part B: Data Exploration
 
-Answered the following questions using advanced SQL queries:
+The following business questions were analyzed using advanced SQL queries:
 
-1.  **Missing Week Numbers**  
-     Identified missing week numbers to find gaps in data collection
+1. Missing Week Numbers
 
-2.  **Total Transactions by Year**  
-     Summed transactions grouped by calendar year
+Identified gaps in weekly data to validate data completeness.
 
-3.  **Monthly Sales by Region**  
-     Analyzed regional performance by month
+Result:
+Sales data was available for only 6 weeks (Weeks 30–35), indicating partial-year coverage and limiting seasonality analysis.
 
-4.  **Total Transactions by Platform**  
-     Compared Retail vs Shopify
+2. Total Transactions by Year
 
-5.  **Monthly Sales Percentage – Retail vs Shopify**  
-     Calculated platform-wise sales share for each month using `CASE` and `CTE`
+Summed total transactions grouped by calendar year.
 
-6.  **Sales Percentage by Demographic (Yearly)**  
-     Used `PARTITION BY` to find each demographic’s sales distribution across years
+Result:
 
-7.  **Top-Contributing Age Bands & Demographics**  
-     Identified the highest-performing customer segments
+2018: 346,406,460 transactions
+
+2019: 365,639,285 transactions
+
+2020: 375,813,651 transactions
+
+This shows a consistent year-over-year increase in transaction volume.
+
+3. Monthly Sales by Region
+
+Analyzed regional sales performance across months.
+
+Result:
+Oceania emerged as the top-performing region across all months, followed by Africa and Asia, indicating strong regional demand concentration.
+
+4. Total Transactions by Platform
+
+Compared transaction volume across sales platforms.
+
+Result:
+
+Retail: 1,081,934,227 transactions
+
+Shopify: 5,925,169 transactions
+
+Retail clearly dominates overall transaction activity.
+
+5. Monthly Sales Percentage – Retail vs Shopify
+
+Calculated platform-wise sales contribution using CTEs and CASE logic.
+
+Result:
+Retail consistently contributed ~97% of monthly sales, while Shopify showed gradual growth from ~2.1% to ~3.4% over time.
+
+6. Sales Percentage by Demographic (Yearly)
+
+Used window functions to analyze demographic contribution by year.
+
+Result:
+Families and Couples contributed the highest sales share, with Couples’ contribution increasing from 30.4% (2018) to 36.1% (2020).
+
+7. Top-Contributing Age Bands & Demographics
+
+Identified customer segments driving the highest retail revenue.
+
+Result:
+Retirees and Families were the highest revenue-generating segments, contributing ₹6.6B+ in Retail sales.
 
 ---
 ## Key Insights
